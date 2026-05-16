@@ -1,0 +1,534 @@
+binary
+get '/usr/include1/google/protobuf/any.o' ANY.o
+get '/usr/include1/google/protobuf/any.pb.o' ANYPB.o
+get '/usr/include1/google/protobuf/any_lite.o' ANYLITE.o
+get '/usr/include1/google/protobuf/api.pb.o' APIPB.o
+get '/usr/include1/google/protobuf/arena.o' ARENA.o
+get '/usr/include1/google/protobuf/arena_test_util.o' ARENATU.o
+get '/usr/include1/google/protobuf/arenastring.o' ARENASTR.o
+get '/usr/include1/google/protobuf/atomic_store.o' ATOMSTOR.o
+get '/usr/include1/google/protobuf/descriptor.o' DESCRIP.o
+get '/usr/include1/google/protobuf/descriptor.pb.o' DESCPB.o
+get '/usr/include1/google/protobuf/descriptor_database.o' DESCDAT.o
+get '/usr/include1/google/protobuf/duration.pb.o' DURAPB.o
+get '/usr/include1/google/protobuf/dynamic_message.o' DYNMSG.o
+get '/usr/include1/google/protobuf/empty.pb.o' EMPTYPB.o
+get '/usr/include1/google/protobuf/extension_set.o' EXTSET.o
+get '/usr/include1/google/protobuf/extension_set_heavy.o' EXTSETHV.o
+get '/usr/include1/google/protobuf/field_mask.pb.o' FLDMASKP.o
+get '/usr/include1/google/protobuf/generated_enum_util.o' GENENUM.o
+get '/usr/include1/google/protobuf/generated_message_bases.o' GENBASE.o
+get '/usr/include1/google/protobuf/generated_message_reflection.o' GENREFL.o
+get '/usr/include1/google/protobuf/generated_message_table_driven.o' GENTABL.o
+get '/usr/include1/google/protobuf/generated_message_table_driven_lite.o' GENTLITE.o
+get '/usr/include1/google/protobuf/generated_message_tctable_full.o' GENTCFUL.o
+get '/usr/include1/google/protobuf/generated_message_tctable_lite.o' GENTCLIT.o
+get '/usr/include1/google/protobuf/generated_message_util.o' GENUTIL.o
+get '/usr/include1/google/protobuf/implicit_weak_message.o' IMPWEAK.o
+get '/usr/include1/google/protobuf/inlined_string_field.o' INLSTRFL.o
+get '/usr/include1/google/protobuf/map.o' MAP.o
+get '/usr/include1/google/protobuf/map_field.o' MAPFLD.o
+get '/usr/include1/google/protobuf/message.o' MESSAGE.o
+get '/usr/include1/google/protobuf/message_lite.o' MESGLITE.o
+get '/usr/include1/google/protobuf/parse_context.o' PARSCNTX.o
+get '/usr/include1/google/protobuf/reflection_ops.o' REFLOPS.o
+get '/usr/include1/google/protobuf/repeated_field.o' RPTFLD.o
+get '/usr/include1/google/protobuf/service.o' SERVICE.o
+get '/usr/include1/google/protobuf/source_context.pb.o' SOURCPB.o
+get '/usr/include1/google/protobuf/struct.pb.o' STRUCTPB.o
+get '/usr/include1/google/protobuf/test_util.o' TESTUT.o
+get '/usr/include1/google/protobuf/test_util_lite.o' TESTLITE.o
+get '/usr/include1/google/protobuf/text_format.o' TEXTFMT.o
+get '/usr/include1/google/protobuf/timestamp.pb.o' TIMESTPB.o
+get '/usr/include1/google/protobuf/type.pb.o' TYPEPB.o
+get '/usr/include1/google/protobuf/unknown_field_set.o' UNKFLD.o
+get '/usr/include1/google/protobuf/wire_format.o' WIREFMT.o
+get '/usr/include1/google/protobuf/wire_format_lite.o' WIRELITE.o
+get '/usr/include1/google/protobuf/wrappers.pb.o' WRAPSPB.o
+get '/usr/include1/google/protobuf/init_protobuf.o' IPROTOBF.o
+
+# ==== STUBS ====
+get '/usr/include1/google/protobuf/stubs/bytestream.o' BYTES.o
+get '/usr/include1/google/protobuf/stubs/statusor.o' STATUSOR.o
+get '/usr/include1/google/protobuf/stubs/strutil.o' STRUTIL.o
+get '/usr/include1/google/protobuf/stubs/common.o' COMMON.o
+get '/usr/include1/google/protobuf/stubs/stringpiece.o' STRPIECE.o
+get '/usr/include1/google/protobuf/stubs/substitute.o' SUBST.o
+get '/usr/include1/google/protobuf/stubs/int128.o' INT128.o
+get '/usr/include1/google/protobuf/stubs/stringprintf.o' STRPRNTF.o
+get '/usr/include1/google/protobuf/stubs/time.o' TIME.o
+get '/usr/include1/google/protobuf/stubs/status.o' STATUS.o
+get '/usr/include1/google/protobuf/stubs/structurally_valid.o' STRCVAL.o
+
+# ==== IO ====
+get '/usr/include1/google/protobuf/io/coded_stream.o' CODESTRM.o
+get '/usr/include1/google/protobuf/io/tokenizer.o' TOKENIZ.o
+get '/usr/include1/google/protobuf/io/gzip_stream.o' GZIPSTRM.o
+get '/usr/include1/google/protobuf/io/zero_copy_stream.o' ZCPYSTRM.o
+get '/usr/include1/google/protobuf/io/io_win32.o' IOWIN32.o
+get '/usr/include1/google/protobuf/io/zero_copy_stream_impl.o' ZCSTIMPL.o
+get '/usr/include1/google/protobuf/io/printer.o' PRINTER.o
+get '/usr/include1/google/protobuf/io/zero_copy_stream_impl_lite.o' ZCSTILIT.o
+get '/usr/include1/google/protobuf/io/strtod.o' STRTOD.o
+
+binary
+
+# ==== Main protobuf files ====
+put ANY.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(ANY)'
+put ANYPB.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(ANYPB)'
+put ANYLITE.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(ANYLITE)'
+put APIPB.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(APIPB)'
+put ARENA.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(ARENA)'
+put ARENATU.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(ARENATU)'
+put ARENASTR.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(ARENASTR)'
+put ATOMSTOR.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(ATOMSTOR)'
+put DESCRIP.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(DESCRIP)'
+put DESCPB.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(DESCPB)'
+put DESCDAT.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(DESCDAT)'
+put DURAPB.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(DURAPB)'
+put DYNMSG.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(DYNMSG)'
+put EMPTYPB.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(EMPTYPB)'
+put EXTSET.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(EXTSET)'
+put EXTSETHV.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(EXTSETHV)'
+put FLDMASKP.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(FLDMASKP)'
+put GENENUM.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(GENENUM)'
+put GENBASE.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(GENBASE)'
+put GENREFL.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(GENREFL)'
+put GENTABL.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(GENTABL)'
+put GENTLITE.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(GENTLITE)'
+put GENTCFUL.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(GENTCFUL)'
+put GENTCLIT.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(GENTCLIT)'
+put GENUTIL.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(GENUTIL)'
+put IMPWEAK.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(IMPWEAK)'
+put INLSTRFL.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(INLSTRFL)'
+put MAP.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(MAP)'
+put MAPFLD.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(MAPFLD)'
+put MESSAGE.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(MESSAGE)'
+put MESGLITE.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(MESGLITE)'
+put PARSCNTX.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(PARSCNTX)'
+put REFLOPS.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(REFLOPS)'
+put RPTFLD.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(RPTFLD)'
+put SERVICE.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(SERVICE)'
+put SOURCPB.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(SOURCPB)'
+put STRUCTPB.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(STRUCTPB)'
+put TESTUT.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(TESTUT)'
+put TESTLITE.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(TESTLITE)'
+put TEXTFMT.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(TEXTFMT)'
+put TIMESTPB.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(TIMESTPB)'
+put TYPEPB.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(TYPEPB)'
+put UNKFLD.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(UNKFLD)'
+put WIREFMT.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(WIREFMT)'
+put WIRELITE.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(WIRELITE)'
+put WRAPSPB.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(WRAPSPB)'
+put IPROTOBF.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(IPROTOBF)'
+
+# ==== STUBS ====
+put BYTES.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(BYTES)'
+put STATUSOR.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(STATUSOR)'
+put STRUTIL.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(STRUTIL)'
+put COMMON.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(COMMON)'
+put STRPIECE.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(STRPIECE)'
+put SUBST.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(SUBST)'
+put INT128.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(INT128)'
+put STRPRNTF.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(STRPRNTF)'
+put TIME.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(TIME)'
+put STATUS.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(STATUS)'
+put STRCVAL.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(STRCVAL)'
+
+# ==== IO ====
+put CODESTRM.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(CODESTRM)'
+put TOKENIZ.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(TOKENIZ)'
+put GZIPSTRM.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(GZIPSTRM)'
+put ZCPYSTRM.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(ZCPYSTRM)'
+put IOWIN32.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(IOWIN32)'
+put ZCSTIMPL.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(ZCSTIMPL)'
+put PRINTER.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(PRINTER)'
+put ZCSTILIT.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(ZCSTILIT)'
+put STRTOD.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY(STRTOD)'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+GET file curl
+………………………………………………..
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-httpsrr.o libcurl_la-httpsrr.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-idn.o libcurl_la-idn.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-altsvc.o libcurl_la-altsvc.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-if2ip.o libcurl_la-if2ip.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-amigaos.o libcurl_la-amigaos.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-imap.o libcurl_la-imap.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-asyn-ares.o libcurl_la-asyn-ares.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-inet_ntop.o libcurl_la-inet_ntop.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-asyn-thread.o libcurl_la-asyn-thread.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-inet_pton.o libcurl_la-inet_pton.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-base64.o libcurl_la-base64.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-keylog.o libcurl_la-keylog.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-bearssl.o libcurl_la-bearssl.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-krb5.o libcurl_la-krb5.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-bufq.o libcurl_la-bufq.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-krb5_gssapi.o libcurl_la-krb5_gssapi.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-bufref.o libcurl_la-bufref.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-krb5_sspi.o libcurl_la-krb5_sspi.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-cf-h1-proxy.o libcurl_la-cf-h1-proxy.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-ldap.o libcurl_la-ldap.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-cf-h2-proxy.o libcurl_la-cf-h2-proxy.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-libssh.o libcurl_la-libssh.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-cf-haproxy.o libcurl_la-cf-haproxy.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-libssh2.o libcurl_la-libssh2.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-cf-https-connect.o libcurl_la-cf-https-connect.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-llist.o libcurl_la-llist.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-cf-socket.o libcurl_la-cf-socket.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-macos.o libcurl_la-macos.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-cfilters.o libcurl_la-cfilters.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-mbedtls.o libcurl_la-mbedtls.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-cipher_suite.o libcurl_la-cipher_suite.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-mbedtls_threadlock.o libcurl_la-mbedtls_threadlock.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-cleartext.o libcurl_la-cleartext.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-md4.o libcurl_la-md4.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-conncache.o libcurl_la-conncache.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-md5.o libcurl_la-md5.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-connect.o libcurl_la-connect.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-memdebug.o libcurl_la-memdebug.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-content_encoding.o libcurl_la-content_encoding.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-mime.o libcurl_la-mime.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-cookie.o libcurl_la-cookie.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-mprintf.o libcurl_la-mprintf.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-cram.o libcurl_la-cram.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-mqtt.o libcurl_la-mqtt.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-cshutdn.o libcurl_la-cshutdn.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-multi.o libcurl_la-multi.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-curl_addrinfo.o libcurl_la-curl_addrinfo.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-multi_ev.o libcurl_la-multi_ev.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-curl_ctype.o libcurl_la-curl_ctype.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-netrc.o libcurl_la-netrc.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-curl_des.o libcurl_la-curl_des.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-non-ascii.o libcurl_la-non-ascii.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-curl_endian.o libcurl_la-curl_endian.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-noproxy.o libcurl_la-noproxy.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-curl_fnmatch.o libcurl_la-curl_fnmatch.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-openldap.o libcurl_la-openldap.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-curl_get_line.o libcurl_la-curl_get_line.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-openssl.o libcurl_la-openssl.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-curl_gethostname.o libcurl_la-curl_gethostname.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-openssl_compat.o libcurl_la-openssl_compat.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-curl_gssapi.o libcurl_la-curl_gssapi.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-openssl_ngtcp2.o libcurl_la-openssl_ngtcp2.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-curl_hmac.o libcurl_la-curl_hmac.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-openssl_quic.o libcurl_la-openssl_quic.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-curl_krb5.o libcurl_la-curl_krb5.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-progress.o libcurl_la-progress.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-curl_memrchr.o libcurl_la-curl_memrchr.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-pingpong.o libcurl_la-pingpong.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-curl_multibyte.o libcurl_la-curl_multibyte.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-pop3.o libcurl_la-pop3.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-curl_ntlm_core.o libcurl_la-curl_ntlm_core.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-prog.o libcurl_la-prog.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-curl_ntlm_wb.o libcurl_la-curl_ntlm_wb.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-psl.o libcurl_la-psl.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-curl_path.o libcurl_la-curl_path.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-rand.o libcurl_la-rand.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-curl_range.o libcurl_la-curl_range.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-rename.o libcurl_la-rename.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-curl_rtmp.o libcurl_la-curl_rtmp.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-rtmpdigest.o libcurl_la-rtmpdigest.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-curl_sasl.o libcurl_la-curl_sasl.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-rtmphttp.o libcurl_la-rtmphttp.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-curl_secapi.o libcurl_la-curl_secapi.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-rtmppacket.o libcurl_la-rtmppacket.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-curl_setup.o libcurl_la-curl_setup.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-rtmp.o libcurl_la-rtmp.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-curl_setup_once.o libcurl_la-curl_setup_once.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-rtmpsock.o libcurl_la-rtmpsock.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-curl_sha256.o libcurl_la-curl_sha256.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-select.o libcurl_la-select.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-curl_sspi.o libcurl_la-curl_sspi.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-sendf.o libcurl_la-sendf.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-curl_threads.o libcurl_la-curl_threads.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-setopt.o libcurl_la-setopt.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-curl_trc.o libcurl_la-curl_trc.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-sha256.o libcurl_la-sha256.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-curl_url.o libcurl_la-curl_url.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-share.o libcurl_la-share.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-curl_wrappers.o libcurl_la-curl_wrappers.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-slist.o libcurl_la-slist.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-dict.o libcurl_la-dict.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-smb.o libcurl_la-smb.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-dotdot.o libcurl_la-dotdot.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-smtp.o libcurl_la-smtp.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-easy.o libcurl_la-easy.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-socketpair.o libcurl_la-socketpair.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-easygetopt.o libcurl_la-easygetopt.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-socks.o libcurl_la-socks.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-easyoptions.o libcurl_la-easyoptions.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-speedcheck.o libcurl_la-speedcheck.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-easy_perform.o libcurl_la-easy_perform.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-splay.o libcurl_la-splay.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-ech.o libcurl_la-ech.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-strcase.o libcurl_la-strcase.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-file.o libcurl_la-file.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-strdup.o libcurl_la-strdup.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-fileinfo.o libcurl_la-fileinfo.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-strerror.o libcurl_la-strerror.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-formdata.o libcurl_la-formdata.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-strtok.o libcurl_la-strtok.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-fopen.o libcurl_la-fopen.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-strtoofft.o libcurl_la-strtoofft.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-ftplistparser.o libcurl_la-ftplistparser.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-system_win32.o libcurl_la-system_win32.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-ftp.o libcurl_la-ftp.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-telnet.o libcurl_la-telnet.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-ftps.o libcurl_la-ftps.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-tftp.o libcurl_la-tftp.o
+
+
+
+
+
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-getenv.o libcurl_la-getenv.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-timecond.o libcurl_la-timecond.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-getinfo.o libcurl_la-getinfo.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-timediff.o libcurl_la-timediff.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-gopher.o libcurl_la-gopher.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-timeval.o libcurl_la-timeval.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-gsasl.o libcurl_la-gsasl.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-transfer.o libcurl_la-transfer.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-hash.o libcurl_la-hash.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-url.o libcurl_la-url.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-hmac.o libcurl_la-hmac.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-urlapi.o libcurl_la-urlapi.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-hostasyn.o libcurl_la-hostasyn.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-vauth.o libcurl_la-vauth.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-hostcheck.o libcurl_la-hostcheck.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-version.o libcurl_la-version.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-hostip.o libcurl_la-hostip.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-version_win32.o libcurl_la-version_win32.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-hostip4.o libcurl_la-hostip4.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-vquic-tls.o libcurl_la-vquic-tls.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-hostip6.o libcurl_la-hostip6.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-vquic.o libcurl_la-vquic.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-hostsyn.o libcurl_la-hostsyn.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-vtls.o libcurl_la-vtls.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-hsts.o libcurl_la-hsts.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-vtls_scache.o libcurl_la-vtls_scache.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-http.o libcurl_la-http.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-vtls_spack.o libcurl_la-vtls_spack.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-http1.o libcurl_la-http1.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-warnless.o libcurl_la-warnless.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-http2.o libcurl_la-http2.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-wolfssh.o libcurl_la-wolfssh.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-http_aws_sigv4.o libcurl_la-http_aws_sigv4.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-wolfssl.o libcurl_la-wolfssl.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-http_chunks.o libcurl_la-http_chunks.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-ws.o libcurl_la-ws.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-http_digest.o libcurl_la-http_digest.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-x509asn1.o libcurl_la-x509asn1.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-http_negotiate.o libcurl_la-http_negotiate.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-http_ntlm.o libcurl_la-http_ntlm.o
+get /usr/include1/curl-8.13.0/curl-8.13.0/object/libcurl_la-http_proxy.o libcurl_la-http_proxy.o
+
+
+
+
+PUT CURL
+………………………………..
+
+
+put libcurl_la-httpsrr.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(HTTPSRR)
+put libcurl_la-idn.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(IDN)
+put libcurl_la-altsvc.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(ALTSVC)
+put libcurl_la-if2ip.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(IF2IP)
+put libcurl_la-amigaos.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(AMIGAOS)
+put libcurl_la-imap.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(IMAP)
+put libcurl_la-asyn-ares.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(ASYNARES)
+put libcurl_la-inet_ntop.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(INETNTOP)
+put libcurl_la-asyn-thread.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(ASYNTHTR)
+put libcurl_la-inet_pton.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(INETPTON)
+put libcurl_la-base64.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(BASE64)
+put libcurl_la-keylog.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(KEYLOG)
+put libcurl_la-bearssl.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(BEARSSL)
+put libcurl_la-krb5.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(KRB5)
+put libcurl_la-bufq.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(BUFQ)
+put libcurl_la-krb5_gssapi.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(KRB5GSSA)
+put libcurl_la-bufref.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(BUFREF)
+put libcurl_la-krb5_sspi.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(KRB5SSPI)
+put libcurl_la-cf-h1-proxy.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(CFH1PROX)
+put libcurl_la-ldap.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(LDAP)
+put libcurl_la-cf-h2-proxy.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(CFH2PROX)
+put libcurl_la-libssh.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(LIBSSH)
+put libcurl_la-cf-haproxy.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(CFHAPROX)
+put libcurl_la-libssh2.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(LIBSSH2)
+put libcurl_la-cf-https-connect.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(CFHTTPSC)
+put libcurl_la-llist.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(LLIST)
+put libcurl_la-cf-socket.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(CFSOCKET)
+put libcurl_la-macos.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(MACOS)
+put libcurl_la-cfilters.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(CFILTERS)
+put libcurl_la-mbedtls.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(MBEDTLS)
+put libcurl_la-cipher_suite.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(CIPHERSU)
+put libcurl_la-mbedtls_threadlock.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(MBEDTHRD)
+put libcurl_la-cleartext.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(CLEARTXT)
+put libcurl_la-md4.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(MD4)
+put libcurl_la-conncache.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(CONNCACH)
+put libcurl_la-md5.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(MD5)
+put libcurl_la-connect.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(CONNECT)
+put libcurl_la-memdebug.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(MEMDEBUG)
+put libcurl_la-content_encoding.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(CONTENC)
+put libcurl_la-mime.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(MIME)
+put libcurl_la-cookie.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(COOKIE)
+put libcurl_la-mprintf.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(MPRINTF)
+put libcurl_la-cram.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(CRAM)
+put libcurl_la-mqtt.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(MQTT)
+put libcurl_la-cshutdn.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(CSHUTDN)
+put libcurl_la-multi.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(MULTI)
+put libcurl_la-curl_addrinfo.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(ADDRINFO)
+put libcurl_la-multi_ev.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(MULTIEV)
+put libcurl_la-curl_ctype.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(CTYPE)
+put libcurl_la-netrc.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(NETRC)
+put libcurl_la-curl_des.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(CURLDES)
+put libcurl_la-non-ascii.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(NONASCII)
+put libcurl_la-curl_endian.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(ENDIAN)
+put libcurl_la-noproxy.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(NOPROXY)
+put libcurl_la-curl_fnmatch.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(FNMATCH)
+put libcurl_la-openldap.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(OPENLDAP)
+
+
+
+put libcurl_la-curl_get_line.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(GETLINE)
+put libcurl_la-openssl.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(OPENSSL)
+put libcurl_la-curl_gethostname.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(GETHOST)
+put libcurl_la-openssl_compat.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(OPENCOMP)
+put libcurl_la-curl_gssapi.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(GSSAPI)
+put libcurl_la-openssl_ngtcp2.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(NGTCP2)
+put libcurl_la-curl_hmac.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(HMAC)
+put libcurl_la-openssl_quic.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(QUIC)
+put libcurl_la-curl_krb5.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(KRB5CURL)
+put libcurl_la-progress.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(PROGRESS)
+put libcurl_la-curl_memrchr.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(MEMRCHR)
+put libcurl_la-pingpong.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(PINGPONG)
+put libcurl_la-curl_multibyte.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(MULTIBYT)
+put libcurl_la-pop3.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(POP3)
+put libcurl_la-curl_ntlm_core.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(NTLMCORE)
+put libcurl_la-prog.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(PROG)
+put libcurl_la-curl_ntlm_wb.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(NTLMWB)
+put libcurl_la-psl.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(PSL)
+put libcurl_la-curl_path.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(PATH)
+put libcurl_la-rand.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(RAND)
+put libcurl_la-curl_range.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(RANGE)
+put libcurl_la-rename.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(RENAME)
+put libcurl_la-curl_rtmp.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(RTMP)
+put libcurl_la-rtmpdigest.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(RTMPDIG)
+put libcurl_la-curl_sasl.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(SASL)
+put libcurl_la-rtmphttp.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(RTMPHTP)
+put libcurl_la-curl_secapi.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(SECAPI)
+put libcurl_la-rtmppacket.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(RTMPPKT)
+put libcurl_la-curl_setup.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(SETUP)
+put libcurl_la-rtmp.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(RTMP)
+put libcurl_la-curl_setup_once.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(SETONCE)
+put libcurl_la-rtmpsock.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(RTMPSCK)
+put libcurl_la-curl_sha256.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(SHA256)
+put libcurl_la-select.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(SELECT)
+put libcurl_la-curl_sspi.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(SSPI)
+put libcurl_la-sendf.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(SENDF)
+put libcurl_la-curl_threads.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(THREADS)
+put libcurl_la-setopt.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(SETOPT)
+put libcurl_la-curl_trc.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(TRC)
+put libcurl_la-sha256.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(SHA256)
+put libcurl_la-curl_url.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(CURLURL)
+put libcurl_la-share.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(SHARE)
+put libcurl_la-curl_wrappers.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(WRAP)
+put libcurl_la-slist.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(SLIST)
+put libcurl_la-dict.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(DICT)
+put libcurl_la-smb.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(SMB)
+put libcurl_la-dotdot.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(DOTDOT)
+put libcurl_la-smtp.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(SMTP)
+put libcurl_la-easy.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(EASY)
+put libcurl_la-socketpair.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(SOCKPAIR)
+put libcurl_la-easygetopt.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(EASYGETO)
+put libcurl_la-socks.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(SOCKS)
+put libcurl_la-easyoptions.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(EASYOPTS)
+put libcurl_la-speedcheck.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(SPEEDCHK)
+put libcurl_la-easy_perform.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(EASYPERF)
+put libcurl_la-splay.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(SPLAY)
+put libcurl_la-ech.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(ECH)
+put libcurl_la-strcase.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(STRCASE)
+put libcurl_la-file.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(FILE)
+put libcurl_la-strdup.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(STRDUP)
+put libcurl_la-fileinfo.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(FILEINFO)
+put libcurl_la-strerror.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(STRERROR)
+put libcurl_la-formdata.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(FORMDATA)
+put libcurl_la-strtok.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(STRTOK)
+put libcurl_la-fopen.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(FOPEN)
+put libcurl_la-strtoofft.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(STRTOOFF)
+put libcurl_la-ftplistparser.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(FTPLIST)
+put libcurl_la-system_win32.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(SYSWIN32)
+put libcurl_la-ftp.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(FTP)
+put libcurl_la-telnet.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(TELNET)
+put libcurl_la-ftps.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(FTPS)
+put libcurl_la-tftp.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(TFTP)
+put libcurl_la-getenv.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(GETENV)
+put libcurl_la-timecond.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(TIMECOND)
+put libcurl_la-getinfo.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(GETINFO)
+put libcurl_la-timediff.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(TIMEDIFF)
+put libcurl_la-gopher.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(GOPHER)
+put libcurl_la-timeval.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(TIMEVAL)
+put libcurl_la-gsasl.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(GSASL)
+put libcurl_la-transfer.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(TRANSFER)
+put libcurl_la-hash.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(HASH)
+put libcurl_la-url.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(URL)
+put libcurl_la-hmac.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(HMAC)
+put libcurl_la-urlapi.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(URLAPI)
+put libcurl_la-hostasyn.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(HOSTASYN)
+put libcurl_la-vauth.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(VAUTH)
+put libcurl_la-hostcheck.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(HOSTCHK)
+put libcurl_la-version.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(VERSION)
+put libcurl_la-hostip.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(HOSTIP)
+put libcurl_la-version_win32.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(VERSWIN3)
+put libcurl_la-hostip4.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(HOSTIP4)
+put libcurl_la-vquic-tls.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(VQUICTLS)
+put libcurl_la-hostip6.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(HOSTIP6)
+put libcurl_la-vquic.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(VQUIC)
+put libcurl_la-hostsyn.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(HOSTSYN)
+put libcurl_la-vtls.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(VTLS)
+put libcurl_la-hsts.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(HSTS)
+put libcurl_la-vtls_scache.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(VTLSCACH)
+put libcurl_la-http.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(HTTP)
+put libcurl_la-vtls_spack.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(VTLSPACK)
+put libcurl_la-http1.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(HTTP1)
+put libcurl_la-warnless.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(WARNLESS)
+put libcurl_la-http2.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(HTTP2)
+put libcurl_la-wolfssh.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(WOLFSSH)
+put libcurl_la-http_aws_sigv4.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(AWSIGV4)
+put libcurl_la-wolfssl.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(WOLFSSL)
+put libcurl_la-http_chunks.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(HTCHNK)
+put libcurl_la-ws.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(WS)
+put libcurl_la-http_digest.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(HTDIGST)
+put libcurl_la-x509asn1.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(X509ASN1)
+put libcurl_la-http_negotiate.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(HTNEGOT)
+put libcurl_la-http_ntlm.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(HTNTLM)
+put libcurl_la-http_proxy.o 'RITZ.RIT.V1106.RELEAS.AHRVCMOD.CURL(HTPROXY)
+
+
+
+
+

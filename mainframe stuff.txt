@@ -1,0 +1,1620 @@
+userid- sandeep
+password - nov24
+
+CICSTS56.CIC56M11.RITLOG01
+CICSTS56.CIC56M11.RITLOG02
+CICSTS56.CICS.SDFHEXCI
+
+10.134.71.136
+
+3128 -http proxy
+5443 - rtcp 
+
+source code of cics
+RITZ.RIT.V1023.RELEAS.RITCPP(HRVCCICS)
+RITZ.RIT.V1023.RELEAS.RIT.CICS.SRC
+
+
+
+MYJCL -SANDEEP.MISC.JCL
+
+
+commands
+……………….
+netstat -an|findstr 78
+ 
+SYSID=CICS APPLID=CIC56M11
+ 
+logon applid(CIC56M11)
+jdbc:db2://10.190.97.45:40001/DCM3LOC
+DATABASE DCM3LOC
+SSC1 database userid  DB2TST password ABC11DEF
+cemt i sys
+ 
+lgicdb*
+ceda e g(*) prog(lg*)
+ ceda e g(*) trans(ssc1)
+
+New transaction defining process
+………………………………………………………………………………………... 
+1)CEDA COPY TRANSACTION(SSC1) AS(SSC2) GROUP(GENASAT) MERGE   first I will give this trans to define the new transaction
+ 
+2)CEDA e tran(SSC2) GROUP(GENASAT) PROGRAM(LGTESTC1)   to edit the program from LGTESTC1 to C2
+I for installing it
+
+3)Then compile the map by using the below job          
+SANDEEP.MISC.JCL(@ASMMAP)
+
+4)Then compile the LGTESTC2 by using SANDEEP.MISC.JCL(@COBOLC1) job and compile LGICDB02 as well as LGICUS02
+
+5) Bind the DB2 LGICDB02 by using the below job SANDEEP.MISC.JCL(@DB2BIND)
+
+                                                                              
+ OBJECT CHARACTERISTICS                                    CICS RELEASE = 0730
+  CEDA  View TRANSaction( SSC1 )                                              
+   TRANSaction    : SSC1                                                      
+   Group          : GENASAT                                                   
+   DEScription    :                                                           
+   PROGram        : LGTESTC1                                                  
+   TWasize        : 00000              0-32767                                
+   PROFile        : DFHCICST                                                  
+   PArtitionset   :                                                           
+   STAtus         : Enabled            Enabled | Disabled                     
+   PRIMedsize     : 00000              0-65520                                
+   TASKDATALoc    : Any                Below | Any                            
+   TASKDATAKey    : User               User | Cics                            
+   STOrageclear   : No                 No | Yes                               
+   RUnaway        : System             System | 0 | 250-2700000               
+   SHutdown       : Disabled           Disabled | Enabled                     
+   ISolate        : Yes                Yes | No                               
+   Brexit         :                                                           
++ REMOTE ATTRIBUTES                                                           
+https://www.ibm.com/docs/en/cics-ts/6.x?topic=guepbf-program-control-program-exits-xpcreq-xpceres-xpcreqc-xpcftch-xpchair-xpcta-xpcabnd
+
+RITZ.RIT.V1023.RELEAS.RIT.CICS.SRC(HRVCMGRC)
+CICSTS56.CIC56M11.RITLOG01
+RITADM.CB12.SOURCE
+RITADM.CB12.DBRMLIB
+
+
+Compile bind link
+RITBLD.BUILD.JCL(MQA021CL)
+RITBLD.BUILD.JCL(MQA021CP)
+RITBLD.BUILD.JCL(MQA021AP)
+RITBLD.BUILD.JCL(MQA021CM)
+RITBLD.BUILD.JCL(MQA021LN)
+RITBLD.BUILD.JCL(MQA021PK)
+
+API-SV-Dev/Green Hat/Integrations/IBM/com.ibm.rational.rit.integration.wmq.zos/zOSsrc/
+com.ibm.rational.rit.integration.wmq.zos
+com.ibm.rational.rit.integration.cics.zos
+
+/* ftpd
+ritadm
+mda1tir
+API-SV-Dev-master.zip
+SANDEEP.RIT.CICS.LOAD
+SANDEEP.RIT.CICS.LOADLIB
+SANDEEP.RIT.CICS.PROC
+
+xmit FILES
+SANDEEP.RIT.CICS.LOAD.XMIT
+SANDEEP.RIT.CICS.LOADLIB.XMIT
+SANDEEP.RIT.PROC.XMIT
+
+SANDEEP.RIT.AUTH
+SANDEEP.RIT.LINK
+SANDEEP.RIT.PROC
+
+
+Commands
+………..
+
+/u/ritbld/tools/unzip -l API-SV-Dev-master.zip
+ 
+API-SV-Dev-master/Green Hat/Integrations/IBM/com.ibm.rational.rit.integration.cics.zos/zOSsrc/C/hrvcmain.c  
+ 
+cd /u/ritbld/RIT/V1105/CICS/zOSsrc 
+
+API-SV-Dev-master/Green Hat/Integrations/ 
+IBM/com.ibm.rational.rit.integration.cics.
+zos/zOSsrc                                 
+ 
+ 006A4718
+ 00001A44
+ 006A4750
+ 00001A44
+ 006A5100
+ 00001A44
+we have mounted debugger on TVM3
+
+/apc/tidz170/usr/lpp/IBM/debug/    --> ID4Z.V17.DEBUG.OMVS.ZFS
+
+
+/u/hclbld/RIT/MASTER/DB2/zOSsrc
+
+
+/V NET,ID=APPLDCM3,ACT
+
+DB2test JCl
+DB2TST.DB2SN.COBOL.JCL       
+SANDEEP.DEBUG.V15.APR1921.SEQASAMP   
+SANDEEP.DEBUG.V15.APR2221.SEQAMOD    
+/apc/tidz170/usr/lpp/IBM/debug/
+SANDEEP.DEBUG.V15.APR1921.SEQASAMP(EQAPROF)
+SANDEEP.DEBUG.V15.APR1921.SEQASAMP(EQAWISVC)
+/apc/tidz170/usr/lpp/IBM/rseapi/tomcat.home/bin
+/apc/tidz170/usr/lpp/IBM/rseapi/tomcat.base/bin/setenv.sh
+
+enter the command -    oedit /apc/tidz170/usr/lpp/IBM/debug/servers/eqaProfile/conf  
+and then open server.xml file in ASCII mode forward slash '/' 
+option 2 to edit
+ 
+->Activating the security settings and classes
+Debug Profile Service uses various security mechanisms to ensure a secure and controlled host system environment for the client. To do so, several classes and security settings must be active, as shown in the following sample RACF commands:
+Display current settings:
+SETROPTS LIST
+Activate FACILITY class:
+SETROPTS GENERIC(FACILITY)
+SETROPTS CLASSACT(FACILITY) RACLIST(FACILITY)
+Activate SURROGAT class::
+SETROPTS GENERIC(SURROGAT)
+SETROPTS CLASSACT(SURROGAT) RACLIST(SURROGAT)
+Activate started task definitions:
+SETROPTS GENERIC(STARTED)
+RDEFINE STARTED ** STDATA(USER(=MEMBER) GROUP(STCGROUP) TRACE(YES))
+SETROPTS CLASSACT(STARTED) RACLIST(STARTED)
+
+
+->Defining the Debug Profile Service started task
+The following sample RACF commands create the EQAPROF started task, with protected user ID (STCEQA) and the STCGROUP group assigned to it:
+ADDGROUP STCGROUP OMVS(AUTOGID) - 
+DATA(‘GROUP WITH OMVS SEGMENT FOR STARTED TASKS’)
+
+ADDUSER STCEQA DFLTGRP(STCGROUP) NOPASSWORD - 
+NAME(‘DEBUG PROFILE SERVER’) - 
+OMVS(AUTOUID HOME('/tmp') PROGRAM('/bin/sh')) 
+- DATA('IBM z/OS Debugger')
+
+RDEFINE STARTED EQAPROF.* - 
+STDATA(USER(STCEQA) GROUP(STCGROUP) TRUSTED(NO)) - 
+DATA(‘DEBUG PROFILE SERVICE’)
+
+SETROPTS RACLIST(STARTED) REFRESH
+
+
+->Enabling Debug Profile Service to switch user context
+Last Updated: 2024-03-11
+Debug Profile Service must be able to switch to the client user ID to perform I/O operations on EQAUOPTS data sets. Define specific BPX.SRV profiles in the SURROGAT class in RACF, or specify a general profile to allow the API to switch to any user ID:
+RDEFINE SURROGAT BPX.SRV.** UACC(NONE)
+PERMIT BPX.SRV.** CLASS(SURROGAT) ID(STCEQA) ACCESS(READ)
+SETROPTS RACLIST(SURROGAT) REFRESH
+
+
+
+->Enabling secure communication
+Last Updated: 2024-05-10
+You can enable Debug Profile Service to communicate via a Secure Sockets Layer (SSL) certificate with a private key and self-signed certificate stored in a keystore file or via a Certificate Authority (CA) certificate with a RACF managed key ring.
+
+Remote clients such as the z/OS Debugger Profiles view might perform hostname verification when communicating with Debug Profile Service. Make sure that the hostname is defined in the Subject Alternative Name (SAN) extension of the SSL certificate.
+
+Enabling secure communication with a keystore file
+You can use the sample keystore file installed in /etc/debug/keystore.p12, or create a new one with the following steps:
+
+Create a keystore file by using the Java runtime utility keytool:
+keytool -genkey -alias liberty -keyalg RSA -storetype PKCS12 -keystore keystore.p12 -ext "SAN=DNS:`/bin/hostname`"
+
+Edit /etc/debug/eqaprof.env and update the keystore variables to use the new keystore file.
+To ensure that the keystore file is only readable by the protected user ID STCEQA, change the owner and permission of the file with:
+  chown STCEQA:STCGROUP keystore.p12
+  chmod 640 keystore.p12
+
+Export the SSL certificate with:
+keytool -export -keystore keystore.p12 -alias liberty -storetype PKCS12 -file liberty.cer -rfc
+
+The SSL certificate can be distributed to remote users to be imported into the client keystore.
+For Eclipse users, manually importing the certificate for z/OS Debugger Profiles view users is not required because users will be prompted to accept the certificate if it is not already in the keystore the first time the view connects to Debug Profile Service.
+
+Z Open Debug users still need to manually import the self-signed certificate.
+
+
+
+->Starting and stopping Debug Profile Service dynamically
+Last Updated: 2024-03-11
+To start the server, use the following console command:
+S EQAPROF
+
+To stop the server, use the following console command:
+P EQAPROF
+
+
+
+
+->Defining Debug Profile Service as a secure z/OS UNIX server
+Last Updated: 2024-03-11
+Debug Profile Service requires UPDATE access to the BPX.SERVER resource in the FACILITY class to create or delete the security environment for the client thread:
+RDEFINE FACILITY BPX.SERVER UACC(NONE)
+PERMIT BPX.SERVER CLASS(FACILITY) ID(STCEQA) ACCESS(UPDATE)
+SETROPTS RACLIST(FACILITY) REFRESH
+
+Test Db2
+Create Db2 subsystem - done
+Ensure sample databases have been created 🡨 Do this next, then continue updating compile JCL and test CUR005.
+Copy over DB2TST datasets from 3I – DB2TST.** - done, but need to perform the following before running each program:
+Compile
+Update run JCL:
+Change Db2 subsystem to DCM3
+Add Db2Prefix1 symbol
+Copy over debugger from 3I - MSTUCK.DEBUG.V15.APR2221.SEQAMOD - done
+Copy over profile service from 3I
+OMVS.MV3I.ZDEBUG.MAR2420    /zdebugger
+OMVS.MV3I.ZDEBUG.OPENBETA   /zdebuggerOpenBeta
+OMVS.MV3I.ZDEBUG.V150908    /zdebugger_V15_09082020 - done
+/etc/debug/eqaprof.env – need to update java_dir
+/var/debug - done
+EQAPROF proc – done
+Do I need to do anything with /etc/debug/keystore?
+Enable security in CICS? MSTUCK.DEBUG.V15.APR1921.SEQASAMP(EQACCSD) - done
+SEC=YES in SYSIN
+New profile TCICSTRN * with UACC read
+READ access to GCICSTRN CAT1 for CICS56
+New profile GCICSTRN * with UACC update
+Add Debug dataset to CICS proc - done
+Run EQAWISVC – done, but needs to be documented that this has to be done after each IPL
+netstat -an|findstr 5001
+
+INQ DB2TRAN(*)                      
+RESULT - OVERTYPE TO MODIFY         
+  Db2tran(DFHSS*)                   
+  Db2entry( DCM3LU2  )              
+  Transid( SS*  )                   
+  Plan(GENATWO)                     
+  Planexitname()                    
+  Installtime(12/04/24 12:31:15)    
+  Installusrid(CICS56)              
+  Installagent(Dynamic)             
+  Definesource(DCM3LU2)             
+  Definetime(12/04/24 12:31:15)     
+  Changetime(12/04/24 12:31:15)     
+  Changeusrid(CICS56)               
+  Changeagent(Dynamic)              
+  Changeagrel(0730)        
+
+SANDEEP.ID4Z.V17.SEQAAUTH
+SANDEEP.ID4Z.V17.SEQAMOD          
+
+DTCN
+………..
+CEDA DEF TCPIPSERVICE(db2prof) GROUP(db2group) Urm(EQADCANO) POrtnumber(0080)  
+STatus(Open) PROtocol(Http) TRansaction(CWXN) Backlog(30) SOcketclose(No)      
+Maxdatalen(032768) SSl(No) AUthenticate(Basic) GRPcritical(No)   
+
+CEDA DEF URIMAP(DB2MAP) GROUP(db2group) STATUS(Enabled) USAGE(Server)   
+SCHEME(HTTP) HOST(*) PATH(/dtcn/*) ANALYZER(Yes)    
+ 
+CEDA INS TCPIPSERVICE(db2prof) GROUP(db2group) 
+
+CEDA INS URIMAP(DB2MAP) GROUP(db2group)
+
+
+  IAZ0522I NETSRV1 NJETCP Signon error: NAK received from IP Addr:
+  hcltvp1.prod.hclpnp.com Port: 175 for OPEN, rsn: 4              
+RITADM.DLAYDBG.EQAUOPTS
+                                               
+                   
+
+
+CEDA DEF FILE(DFHDPFMP) DESCRIPTION(Debugging Profiles Path File) RLSACCESS(NO) 
+   LSRPOOLID(1)  READINTEG(UNCOMMITTED)    DSNSHARING(ALLREQS) STRINGS(10)      
+   STATUS(ENABLED) OPENTIME(FIRSTREF) DISPOSITION(SHARE) DATABUFFERS(11)        
+  INDEXBUFFERS(10) TABLE(NO) RECORDFORMAT(V) ADD(YES) BROWSE(YES) DELETE(YES)   
+            READ(YES) UPDATE(YES) JOURNAL(NO) JNLREAD(NONE) JNLSYNCREAD(NO)     
+ JNLUPDATE(NO) JNLADD(NONE) JNLSYNCWRITE(NO)  RECOVERY(NONE)  FWDRECOVLOG(NO)   
+ BACKUPTYPE(STATIC)    GROUP(EQA) DSNAME(RITADM.CICS.DFHDPFMP)         
+
+
+CEDA DEF FILE(DFHDPFMB) DESCRIPTION(Debugging Profiles Path File) RLSACCESS(NO) 
+   LSRPOOLID(1)  READINTEG(UNCOMMITTED)    DSNSHARING(ALLREQS) STRINGS(10)      
+   STATUS(ENABLED) OPENTIME(FIRSTREF) DISPOSITION(SHARE) DATABUFFERS(11)        
+  INDEXBUFFERS(10) TABLE(NO) RECORDFORMAT(V) ADD(YES) BROWSE(YES) DELETE(YES)   
+            READ(YES) UPDATE(YES) JOURNAL(NO) JNLREAD(NONE) JNLSYNCREAD(NO)     
+ JNLUPDATE(NO) JNLADD(NONE) JNLSYNCWRITE(NO)  RECOVERY(NONE)  FWDRECOVLOG(NO)   
+ BACKUPTYPE(STATIC)    GROUP(EQA) DSNAME(RITADM.CICS.DFHDPFMP)                 
+                                                                
+
+TEST(...RIT&AgentHostName%xxxx:*)     
+RITADM.CB12.SYSDEBUG
+https://www.ibm.com/support/pages/apar/OA54598
+
+
+//COB51CMP PROC LNGPRFX='ECOBOL.V620',    
+//            CICPRFX='CICSTS56.CICS',    
+//            DB2PRFX='DB2.VC10'          
+//*                                       
+//COBOL    EXEC PGM=IGYCRCTL,             
+//            PARM=('ADATA',              
+//            'LIB',                      
+//            'TEST',                     
+//            'LIST',                     
+//            'MAP',                      
+//            'XREF',                     
+//            'FLAG(I,I)'&CICS&DB2&COMP)  
+//STEPLIB  DD DISP=SHR,                   
+//            DSN=&LNGPRFX..SIGYCOMP      
+//         DD DISP=SHR,                   
+//            DSN=&CICPRFX..SDFHLOAD      
+//         DD DISP=SHR,                   
+//            DSN=&DB2PRFX..SDSNLOAD  
+
+SET DISASSEMBLY ON
+DESCRIBE LOADMODS    
+SET AUTO ON LOG
+An AICA abend in CICS is a transaction abend code that indicates that the Interval Control issued the abend. This can happen when a transaction is in a loop, or when the clock reaches zero. 
+
+
+US bank,
+Commerz bank
+
+Quote site CYL PRI=1 SEC=1 recfm=fb lrecl=80 blksize=3200
+Put RIT.CICS.LOADLIB.XMIT 'RITADM.RIT.CICS.LOADLIB.XMIT'
+Put RIT.CICS.LOAD.XMIT 'RITADM.RIT.CICS.LOAD.XMIT'
+Put RIT.CICS.PROC.XMIT 'RITADM.RIT.CICS.PROC.XMIT'
+
+      
+RITADM.RIT.CICS.LOAD         
+RITADM.RIT.CICS.LOAD.XMIT    
+RITADM.RIT.CICS.LOADLIB      
+RITADM.RIT.CICS.LOADLIB.XMIT 
+RITADM.RIT.CICS.PROC         
+RITADM.RIT.CICS.PROC.XMIT    
+
+C:\Users\sandeep.garg\Desktop\XMIT-files-CICS-1105\RITADM.RIT.CICS.LOADLIB.XMIT
+
+
+
+
+RITADM.RIT.AUTH      
+RITADM.RIT.AUTH.XMIT 
+RITADM.RIT.LINK      
+RITADM.RIT.LINK.XMIT 
+RITADM.RIT.PROC      
+RITADM.RIT.PROC.XMIT 
+
+
+
+
+To push changes
+……………………………………………..
+Execute
+change the files in local version then
+git status
+git add .
+git status
+git commit -m "correct XMIT files"
+Then
+git push
+git merge origin/master   not used as such but is done from git by reviewing the PR and then green and then squash and build after that build it by passing parameters in build that is currently going on by specifying 11.0.5 version
+git push origin/master
+
+To push changes and create a branch
+……………………………………………………………………………………………
+
+Execute
+change the files in local version then
+git status
+git add .
+git status
+
+then create a branch in master home page then do 
+git pull
+git checkout TP-95812
+then commit the changes below and push
+
+git commit --amend -m "TP-95812:Recompile MQ &CICS exits"
+Then
+git push 
+git merge origin/master
+git push origin/master
+
+master build
+
+branch commands
+GIT BRANCH     to check which branch is active
+GIT BRANCH -M main  to rename b ranch
+GIT checkout branchname    to move between branches
+GIT checkout -b  <new branch name>   to create a new branch
+GIT branch -D <branch name> to delete branch
+
+
+iniit command
+git init
+git remote -v   to verify remote
+git push -u origin master   to push code to master and tell we want to push code to the master for long time
+git push    to push code to master
+git remove add origin https://github01.hclpnp.com/testingproducts/API-SV-Dev
+git add nameoffile    - to add particular file
+
+
+To merge two branches
+………………………………………………………………….
+
+git diff main    to get the differences
+
+git merge main   to merge the differences in main
+
+to pull changes to local
+…………………………………………………………..
+git checkout main
+git pull origin main to  get all the differences in the main and local 
+
+rename to curl.7.52.1 ->/u/ritbld/colony/3rdPartyC/include/curl/include/curl 
+copy from /u/ritbld/colony/worker/ritvA120/Release/3rdPartyC/include/curl/include/curl/ to /u/ritbld/colony/worker/ritvA120/Release/3rdPartyC/include/curl/  
+
+cd /u/ritbld/RIT/V1105/CICS/zOSsrc
+
+RITADM.RIT.CICS.LOADLIB.XMIT
+RITADM.RIT.CICS.PROC.XMIT
+7.52.1
+ curl.h           curlver.h        multi.h         
+curlbuild.h      easy.h           stdcheaders.h   
+curlrules.h      mprintf.h        typecheck-gcc.h
+
+curl_off_t
+CICSTS56.CIC56M11.RITLOG01
+
+/* The size of `curl_off_t', as computed by sizeof. */
+#define CURL_SIZEOF_CURL_OFF_T 8
+/* The size of `long', as computed by sizeof. */
+#define CURL_SIZEOF_LONG 8
+typedef char
+  __curl_rule_01__
+    [CurlchkszEQ(long, CURL_SIZEOF_LONG)];
+
+/*
+ * Verify that the size previously defined and expected for
+ * curl_off_t is actually the the same as the one reported
+ * by sizeof() at compile time.
+ */
+
+typedef char
+  __curl_rule_02__
+
+
+
+7.83.1
+
+curl.h           
+curlver.h        
+easy.h           
+header.h         
+mprintf.h        
+multi.h          
+options.h        
+stdcheaders.h    
+system.h         
+typecheck-gcc.h  
+urlapi.h         
+    [CurlchkszEQ(curl_off_t, CURL_SIZEOF_CURL_OFF_T)];
+
+#define CURL_SIZEOF_CURL_OFF_T 8
+#define CURL_SIZEOF_LONG 8
+
+RITADM.CICSTS56.CIC56M11.RITLOG01
+RITADM.CICSTS56.CIC56M11.RITLOG01.GOOD
+
+Code changes are in the following PDS
+RITADM.RIT.V1105.RELEAS.RITCPP
+
+initializer_list
+
+/u/ritbld/RIT/V1106/CICS/zOSsrc
+cp -a H_IBM-1047/. /u/ritbld/colony/worker/ritvA120/Release/3rdPartyC/include/curl/  
+Compile bind link
+RITBLD.BUILD.JCL(MQA021CL)
+RITBLD.BUILD.JCL(MQA021CP)
+RITBLD.BUILD.JCL(MQA021AP)
+RITBLD.BUILD.JCL(MQA021CM)
+RITBLD.BUILD.JCL(MQA021LN)
+RITBLD.BUILD.JCL(MQA021PK)
+RITZ.RIT.V1107.RELEAS.RIT.CICS.LOADLIB
+RITZ.RIT.V1107.RELEAS.RIT.CICS.LOAD
+
+ceda e lib(RIT*) GROUP(RIT*)  then change and install
+RITADM.RIT.CICS.LOADLIB 
+RITADM.RIT.CICS.LOAD    
+ceda e g(*) prog(hrvc*) then install
+CP -r H_IBM-1047 /u/ritbld/colony/worker/ritvA120/Release/3rdPartyC/include/google/protobuf/stubs
+PARAM.h CEE.SCEEH.SYS.H
+HRVCPRXY   done
+HRVCLGEV   done
+HRVCLGGR   done
+LOGEVENT   done
+LOGGER      done
+PROXY       done
+HRVCXFER    done
+                      
+ #include <google/protobuf/stubs/once.h>      yes     done3    once
+ #include <google/protobuf/io/coded_stream.h>   yes   done3    cstream
+ #include <google/protobuf/wire_format_lite_inl.h>  yes done2  wfmtli     yes
+ #include <google/protobuf/descriptor.h>   yes   done2         descr
+ #include <google/protobuf/reflection_ops.h>  yes   done2      reflnops 
+ #include <google/protobuf/wire_format.h>  yes    done2        wfmt
+ descriptor.pb.h   done2    descrpb
+repeated_field.h>  yes    done2  repeatf 
+wire_format_lite.h>  yes  done2  wfmtl
+generated_message_util.h> yes     done2   genmsgut  
+#include <google/protobuf/message.h>    yes   done2  message
+<google/protobuf/stubs/common.h>     yes    done2    common
+<google/protobuf/message_lite.h>     yes    done2    messagel     yes 
+<google/protobuf/extension_set.h>  logger.h yes   done2  extset
+<google/protobuf/generated_message_reflection.h>  done2  genmsgre
+<google/protobuf/unknown_field_set.h>    done2           unknfset
+<google/protobuf/io/zero_copy_stream_impl_lite.h>   HRVCXFER    done2    zerocsil
+#include <google/protobuf/io/zero_copy_stream.h>   done2                 zerocs
+
+ #else                                                              
+  #ifdef __MVS__                                                    
+       #error inside3                                               
+   #include <limits.h>                                              
+  #else                                                             
+       #error inside4                                               
+   #include <sys/param.h>   // __BYTE_ORDER                         
+   #if defined(__BYTE_ORDER) && __BYTE_ORDER == __LITTLE_ENDIAN && \
+       !defined(PROTOBUF_DISABLE_LITTLE_ENDIAN_OPT_FOR_TEST)        
+     #define PROTOBUF_LITTLE_ENDIAN 1                               
+   #endif                                                           
+  #endif                                                            
+ #endif                                                             
+
+
+
+
+
+io/coded_stream.h>      
+wire_format_lite_inl.h> 
+descriptor.h>           
+reflection_ops.h>       
+wire_format.h> 
+MESSAGE.H
+
+ 
+
+//CHANGES                                
+#define _MSC_VER 1400                    
+#define GOOGLE_PROTOBUF_ARCH_IA32 1      
+#define _M_IX86 1                        
+#define PROTOBUF_USE_DLLS 1              
+
+HRVCCFPL done
+HRVCCOMM done
+HRVCAPLG done
+HRVCCICS  done
+HRVCSSVR  done
+HRVCPROT  done
+HRVCOBVR  done
+HRVCRGPL  done
+HRVCSRPL  done      
+HRVCXFER    done
+HRVCCNDT  done
+HRVCSCTL  done
+HRVCSVLG  done
+HRVCRECD  done
+
+make-4.4.1
+CBC.HLB77C3.SCNWCMP
+PGM changes
+HRVCLGEV    done
+HRVCLGGR    done
+HRVXPRXY    done
+
+EW       RITZ.RIT.V1106.RELEAS.RITH(REPEATF) - 01.00     Columns 00001 00072    done
+mmand ===>                                                  Scroll ===> CSR  
+0983   // write "typename" in front of them everywhere.                      
+0984   typedef typename superclass::reference reference;                     
+0985   typedef typename superclass::pointer pointer;                         
+0986   typedef typename superclass::difference_type difference_type;         
+0987                                                                         
+0988   RepeatedPtrIterator() : it_(NULL) {}                                  
+0989   explicit RepeatedPtrIterator(void* const* it) : it_(it) {}            
+0990                                                                         
+0991   // Allow "upcasting" from RepeatedPtrIterator<T**> to                 
+0992   // RepeatedPtrIterator<const T*const*>.                               
+0993   template<typename OtherElement>                                       
+0994   RepeatedPtrIterator(const RepeatedPtrIterator<OtherElement>& other)   
+0995       : it_(other.it_) {                                                
+0996     // Force a compiler error if the other type is not convertible to ou
+0997  /* if (false) {                                                        
+0998       implicit_cast<Element*, OtherElement*>(0);                        
+0999     } */                                                                
+1000   }                                                                     
+1001         
+
+
+
+
+ext/atomicity.h
+debug/debug.h
+cxxabi-forced.h
+exception_defines.h
+bits/os_defines.h
+gcc/gthr.h   all the files in the gcc
+bits/cpu_defines.h
+bits/atomic_word.h
+bits/ctype_base.h
+ext/type_traits.h
+ext/numeric_traits.h
+bits/ctype_inline.h
+bits/c++locale.h
+backward/binders.h
+ext/concurrence.h
+backward/auto_ptr.h
+tr1_impl/boost_sp_counted_base.h
+bits/error_constants.h
+tr1_impl/type_traits
+tr1_impl/utility
+
+
+
+
+/usr/include,/usr/include/c++
+
+DEF(__GXX_EXPERIMENTAL_CXX0X__),
+DEF( __IBMCPP_TR1__),           
+DEF( _LIBCPP_HAS_C_ATOMIC_IMP), 
+/__type_traits/is_array.h
+/usr/lpp/IBM/cnw/v1r1/openxl/include/c++/v1
+/usr/lpp/IBM/cnw/v1r1/openxl/lib/clang/18/include
+CBC.HLB77C3.SCNWCMP
+CBC.HLB77C3.SCNWPRC
+iconv -f UTF-8 -t IBM-1047 inputfile > outputfile
+iconv -f UTF-8 -t IBM-1047 HRVCCICS_CIC56M11 > HRVCCICS_CIC56M11_COPY
+
+curl -Lk http://github.com/zopencommunity/protobuf/archive/refs/heads/main.tar.gz -o protobuf.tar.gz
+7zip extract data and then transfer to mainframe by binary and then pax -rf protobuf.zip
+
+Compiled successfully pgm's
+HRVCLGGR  n
+HRVCLGEV  n
+HRVCPRXY  n
+HRVCCICS  m
+HRVCCFPL  l
+HRVCCOMM  m
+HRVCCNDT  l
+HRVCXFER  l
+HRVCAPLG  l
+HRVCSSVR  l
+HRVCPROT  l
+HRVCSCTL  n
+HRVCSVLG  l
+HRVCOBVR  m
+HRVCRGPL  n
+HRVCRECD  m
+HRVCSRPL  l     
+SOCKTHMG  n
+MULXFER  n
+
+xlc++ -c -O2 /u/ritbld/colony/worker/ritvA120/Release/3rdPartyC/include/google1/protobuf any.h -o any.o
+xlc++ -c -O2 /apc/portedtools/make-4.4.1/src ar1.c -o ar1.o
+
+/usr/lpp/cbclib/xlc/bin
+export PATH=/usr/lpp/cbclib/xlc/bin/:$PATH
+CC=xlc
+CNWXB   
+change this code according to GOOGLE_PROTOBUF_VERSION 3017003
+google8protobuf                                                
+cd C:\dev\protobuf-3.17.3
+mkdir cmake_build
+cd cmake_build
+
+cmake -G "Visual Studio 17 2022" -A x64 ^
+  -Dprotobuf_BUILD_SHARED_LIBS=OFF ^
+  -Dprotobuf_BUILD_TESTS=OFF ^
+  -DCMAKE_INSTALL_PREFIX="C:\protobuf-3.17.3\install" ^
+  ..
+
+cmake --build . --config Release --target install
+cmake --build . --config Debug --target install
+
+
+
+
+
+
+protobuf
+……………………………………….
+any.cc                         
+any.pb.cc                      
+any_lite.cc                    
+api.pb.cc                      
+arena.cc                       
+arena_test_util.cc             
+arenastring.cc                 
+atomic_store.cc                
+descriptor.cc                  
+descriptor.pb.cc               
+descriptor_database.cc         
+duration.pb.cc                 
+dynamic_message.cc             
+empty.pb.cc                    
+extension_set.cc               
+extension_set_heavy.cc         
+field_mask.pb.cc               
+generated_enum_util.cc         
+generated_message_bases.cc     
+generated_message_reflection.cc
+generated_message_table_driven.cc          
+generated_message_table_driven_lite.cc     
+generated_message_tctable_full.cc          
+generated_message_tctable_lite.cc          
+generated_message_util.cc                  
+implicit_weak_message.cc                   
+inlined_string_field.cc                    
+map.cc                                     
+map_field.cc                               
+message.cc                                 
+message_lite.cc                            
+parse_context.cc                           
+reflection_ops.cc                          
+repeated_field.cc                          
+service.cc                                 
+source_context.pb.cc                       
+struct.pb.cc                               
+test_util.cc                               
+test_util_lite.cc                          
+text_format.cc        
+timestamp.pb.cc       
+type.pb.cc            
+unknown_field_set.cc  
+wire_format.cc        
+wire_format_lite.cc   
+wrappers.pb.cc        
+
+
+STUBS
+…………………………….
+
+bytestream.cc
+statusor.cc           
+strutil.cc   
+common.cc              
+stringpiece.cc         
+substitute.cc
+int128.cc              
+stringprintf.cc        
+time.cc      
+status.cc              
+structurally_valid.cc               
+
+
+IO
+……………………………..
+coded_stream.cc                
+tokenizer.cc                  
+gzip_stream.cc                 
+zero_copy_stream.cc           
+io_win32.cc                    
+zero_copy_stream_impl.cc      
+printer.cc                     
+zero_copy_stream_impl_lite.cc 
+
+
+
+
+ar -rv libprotobuf.a stubs/*.o io/*.o
+
+//ALLOC    JOB CLASS=A,MSGCLASS=X,NOTIFY=&SYSUID
+//STEP1    EXEC PGM=IEFBR14
+//OBJLIB   DD DSN=YOURID.PROTOBUF.OBJLIB,DISP=(NEW,CATLG,DELETE),
+//            DSORG=PO,RECFM=FB,LRECL=80,BLKSIZE=32720,
+//            SPACE=(CYL,(50,10,20))
+
+
+//COPYOBJ  JOB CLASS=A,MSGCLASS=X,NOTIFY=&SYSUID
+//STEP1    EXEC PGM=BPXBATCH,REGION=0M,
+//         PARM='SH'
+//STDOUT   DD SYSOUT=*
+//STDERR   DD SYSOUT=*
+//STDPARM  DD *
+cp "//'/u/yourid/protobuf/stubs/any.o'" "//'YOURID.PROTOBUF.OBJLIB(ANYO)'"
+cp "//'/u/yourid/protobuf/io/io.o'" "//'YOURID.PROTOBUF.OBJLIB(IOO)'"
+cp "//'/u/yourid/protobuf/common/common.o'" "//'YOURID.PROTOBUF.OBJLIB(COMMONO)'"
+# repeat for all .o files from src/stubs, src/io, src/common ...
+/*
+
+
+binder
+…………………
+//MAKEAR   JOB CLASS=A,MSGCLASS=X,NOTIFY=&SYSUID
+//STEP1    EXEC PGM=IEWL,PARM='LIST,XREF,LET,MAP'
+//SYSPRINT DD SYSOUT=*
+//SYSUT1   DD UNIT=SYSDA,SPACE=(CYL,(50,10))
+//SYSLIB   DD DISP=SHR,DSN=CEE.SCEELKED
+//OBJLIB   DD DISP=SHR,DSN=YOURID.PROTOBUF.OBJLIB
+//LIBOUT   DD DISP=SHR,DSN=RITBLD.RIT.CICS.LIB3RD(PROTOBUF)
+//SYSIN    DD *
+  INCLUDE OBJLIB(ANYO)
+  INCLUDE OBJLIB(IOO)
+  INCLUDE OBJLIB(COMMONO)
+  ENTRY   _
+  NAME    PROTOBUF(R)
+/*
+
+
+
+cp "//'/usr/include1/google/protobuf1/any.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(ANY)'"
+cp "//'/usr/include1/google/protobuf1/any.pb.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(ANYPB)'"
+cp "//'/usr/include1/google/protobuf1/any_lite.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(ANYLITE)'"
+cp "//'/usr/include1/google/protobuf1/api.pb.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(APIPB)'"
+cp "//'/usr/include1/google/protobuf1/arena.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(ARENA)'"
+cp "//'/usr/include1/google/protobuf1/arena_test_util.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(ARENATU)'"
+cp "//'/usr/include1/google/protobuf1/arenastring.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(ARENASTR)'"
+cp "//'/usr/include1/google/protobuf1/atomic_store.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(ATOMSTOR)'"
+cp "//'/usr/include1/google/protobuf1/descriptor.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(DESCRIP)'"
+cp "//'/usr/include1/google/protobuf1/decriptor.pb.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(DESCPB)'"
+cp "//'/usr/include1/google/protobuf1/descriptor_database.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(DESCDAT)'"
+cp "//'/usr/include1/google/protobuf1/duration.pb.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(DURAPB)'"
+cp "//'/usr/include1/google/protobuf1/dynamic_message.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(DYNMSG)'"
+cp "//'/usr/include1/google/protobuf1/empty.pb.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(EMPTYPB)'"
+cp "//'/usr/include1/google/protobuf1/extension_set.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(EXTSET)'"
+cp "//'/usr/include1/google/protobuf1/extension_set_heavy.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(EXTSETHV)'"
+cp "//'/usr/include1/google/protobuf1/field_mask.pb.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(FLDMASKP)'"
+cp "//'/usr/include1/google/protobuf1/generated_enum_util.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(GENENUM)'"
+cp "//'/usr/include1/google/protobuf1/generated_message_bases.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(GENBASE)'"
+cp "//'/usr/include1/google/protobuf1/generated_message_reflection.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(GENREFL)'"
+cp "//'/usr/include1/google/protobuf1/generated_message_table_driven.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(GENTABL)'"
+cp "//'/usr/include1/google/protobuf1/generated_message_table_driven_lite.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(GENTLITE)'"
+cp "//'/usr/include1/google/protobuf1/generated_message_tctable_full.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(GENTCFUL)'"
+cp "//'/usr/include1/google/protobuf1/generated_message_tctable_lite.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(GENTCLIT)'"
+cp "//'/usr/include1/google/protobuf1/generated_message_util.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(GENUTIL)'"
+cp "//'/usr/include1/google/protobuf1/implicit_weak_message.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(IMPWEAK)'"
+cp "//'/usr/include1/google/protobuf1/inlined_string_field.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(INLSTRFL)'"
+cp "//'/usr/include1/google/protobuf1/map.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(MAP)'"
+cp "//'/usr/include1/google/protobuf1/map_field.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(MAPFLD)'"
+cp "//'/usr/include1/google/protobuf1/message.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(MESSAGE)'"
+cp "//'/usr/include1/google/protobuf1/message_lite.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(MESGLITE)'"
+cp "//'/usr/include1/google/protobuf1/parse_context.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(PARSCNTX)'"
+cp "//'/usr/include1/google/protobuf1/reflection_ops.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(REFLOPS)'"
+cp "//'/usr/include1/google/protobuf1/repeated_field.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(RPTFLD)'"
+cp "//'/usr/include1/google/protobuf1/service.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(SERVICE)'"
+cp "//'/usr/include1/google/protobuf1/source_context.pb.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(SOURCPB)'"
+cp "//'/usr/include1/google/protobuf1/struct.pb.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(STRUCTPB)'"
+cp "//'/usr/include1/google/protobuf1/test_util.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(TESTUT)'"
+cp "//'/usr/include1/google/protobuf1/test_util_lite.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(TESTLITE)'"
+cp "//'/usr/include1/google/protobuf1/text_format.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(TEXTFMT)'"
+cp "//'/usr/include1/google/protobuf1/timestamp.pb.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(TIMESTPB)'"
+cp "//'/usr/include1/google/protobuf1/type.pb.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(TYPEPB)'"
+cp "//'/usr/include1/google/protobuf1/unknown_field_set.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(UNKFLD)'"
+cp "//'/usr/include1/google/protobuf1/wire_format.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(WIREFMT)'"
+cp "//'/usr/include1/google/protobuf1/wire_format_lite.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(WIRELITE)'"
+cp "//'/usr/include1/google/protobuf1/wrappers.pb.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(WRAPSPB)'"
+
+# ==== STUBS (extra) ====
+cp "//'/usr/include1/google/protobuf1/stubs/bytestream.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(BYTES)'"
+cp "//'/usr/include1/google/protobuf1/stubs/statusor.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(STATUSOR)'"
+cp "//'/usr/include1/google/protobuf1/stubs/strutil.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(STRUTIL)'"
+cp "//'/usr/include1/google/protobuf1/stubs/common.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(COMMON)'"
+cp "//'/usr/include1/google/protobuf1/stubs/stringpiece.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(STRPIECE)'"
+cp "//'/usr/include1/google/protobuf1/stubs/substitute.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(SUBST)'"
+cp "//'/usr/include1/google/protobuf1/stubs/int128.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(INT128)'"
+cp "//'/usr/include1/google/protobuf1/stubs/stringprintf.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(STRPRNTF)'"
+cp "//'/usr/include1/google/protobuf1/stubs/time.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(TIME)'"
+cp "//'/usr/include1/google/protobuf1/stubs/status.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(STATUS)'"
+cp "//'/usr/include1/google/protobuf1/stubs/structurally_valid.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(STRCVAL)'"
+
+# ==== IO ====
+cp "//'/usr/include1/google/protobuf1/io/coded_stream.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(CODESTRM)'"
+cp "//'/usr/include1/google/protobuf1/io/tokenizer.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(TOKENIZ)'"
+cp "//'/usr/include1/google/protobuf1/io/gzip_stream.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(GZIPSTRM)'"
+cp "//'/usr/include1/google/protobuf1/io/zero_copy_stream.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(ZCPYSTRM)'"
+cp "//'/usr/include1/google/protobuf1/io/io_win32.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(IOWIN32)'"
+cp "//'/usr/include1/google/protobuf1/io/zero_copy_stream_impl.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(ZCSTIMPL)'"
+cp "//'/usr/include1/google/protobuf1/io/printer.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(PRINTER)'"
+cp "//'/usr/include1/google/protobuf1/io/zero_copy_stream_impl_lite.o'" "//'RITBLD.RIT.CICS.LIB3RD.COPY(ZCSTILIT)'"
+
+
+
+
+./load_protobuf.sh
+ocopy /usr/include1/google/protobuf/any.o "//'RITBLD.RIT.CICS.LIB3RD.COPY(COPYANY)'" CONVERT(YES)
+
+
+
+
+//MAKEPB   JOB CLASS=A,MSGCLASS=X,NOTIFY=&SYSUID
+//STEP1    EXEC PGM=IEWL,PARM='LIST,XREF,LET,MAP'
+//SYSPRINT DD SYSOUT=*
+//SYSUT1   DD UNIT=SYSDA,SPACE=(CYL,(50,10))
+//SYSLIB   DD DISP=SHR,DSN=CEE.SCEELKED
+//OBJLIB   DD DISP=SHR,DSN=YOURID.PROTOBUF.OBJLIB
+//SYSLIN   DD *
+  INCLUDE OBJLIB(ANYO)
+  INCLUDE OBJLIB(ANYPB)
+  INCLUDE OBJLIB(ANYLITE)
+  INCLUDE OBJLIB(APIPB)
+  INCLUDE OBJLIB(ARENA)
+  INCLUDE OBJLIB(ARENATSTU)
+  INCLUDE OBJLIB(ARENASTR)
+  INCLUDE OBJLIB(ATOMICST)
+  INCLUDE OBJLIB(DESCRIPT)
+  INCLUDE OBJLIB(DESCPB)
+  INCLUDE OBJLIB(DESCDATB)
+  INCLUDE OBJLIB(DURAPB)
+  INCLUDE OBJLIB(DYNMSG)
+  INCLUDE OBJLIB(EMPTYPB)
+  INCLUDE OBJLIB(EXTSET)
+  INCLUDE OBJLIB(EXTHEAVY)
+  INCLUDE OBJLIB(FIELDMAS)
+  INCLUDE OBJLIB(GENENUMU)
+  INCLUDE OBJLIB(GENMSGB)
+  INCLUDE OBJLIB(GENMSGRF)
+  INCLUDE OBJLIB(GENMSGTB)
+  INCLUDE OBJLIB(GENMSGLT)
+  INCLUDE OBJLIB(GENMSGTU)
+  INCLUDE OBJLIB(GENMSFTC)
+  INCLUDE OBJLIB(IMPLWEAK)
+  INCLUDE OBJLIB(INLSTRF)
+  INCLUDE OBJLIB(MAPO)
+  INCLUDE OBJLIB(MAPFIELD)
+  INCLUDE OBJLIB(MSGO)
+  INCLUDE OBJLIB(MSGLITE)
+  INCLUDE OBJLIB(PARSCNTX)
+  INCLUDE OBJLIB(REFLOPS)
+  INCLUDE OBJLIB(REPFIELD)
+  INCLUDE OBJLIB(SERVICE)
+  INCLUDE OBJLIB(SRCCONTX)
+  INCLUDE OBJLIB(STRUCTPB)
+  INCLUDE OBJLIB(TESTUTIL)
+  INCLUDE OBJLIB(TESTULIT)
+  INCLUDE OBJLIB(TEXTFMT)
+  INCLUDE OBJLIB(TIMESTMP)
+  INCLUDE OBJLIB(TYPEPB)
+  INCLUDE OBJLIB(UNKFSET)
+  INCLUDE OBJLIB(WIREFMT)
+  INCLUDE OBJLIB(WIRELITE)
+  INCLUDE OBJLIB(WRAPSPB)
+  INCLUDE OBJLIB(COMMONO)
+  INCLUDE OBJLIB(STRUTIL)
+  INCLUDE OBJLIB(STRINGPC)
+  INCLUDE OBJLIB(SUBSTIT)
+  INCLUDE OBJLIB(INT128O)
+  INCLUDE OBJLIB(STRPRTF)
+  INCLUDE OBJLIB(TIMEO)
+  INCLUDE OBJLIB(STATUS)
+  INCLUDE OBJLIB(STRUVAL)
+  INCLUDE OBJLIB(CODEDSTR)
+  INCLUDE OBJLIB(TOKENIZR)
+  INCLUDE OBJLIB(GZIPSTRM)
+  INCLUDE OBJLIB(ZCSTRM)
+  INCLUDE OBJLIB(IOWIN32)
+  INCLUDE OBJLIB(ZCSTIMPL)
+  INCLUDE OBJLIB(PRINTER)
+  INCLUDE OBJLIB(ZCSTLITE)
+  NAME PROTOBUF(R)
+/*
+//SYSLMOD  DD DISP=SHR,DSN=RITBLD.RIT.CICS.LIB3RD
+
+RITZ.RIT.V1106.RELEAS.AHRVCMOD.COPY
+CBC.HLB77C3.SCNWPRC(CNWXB)
+/u/ritbld/RIT/V1106/CICS/zOSsrc
+/u/ritbld/colony/worker/ritvA120/Release/3rdPartyC/include/curl/ 
+/usr/include1/curl-7.52.1/curl/include/curl
+ANYPB    
+APIPB    
+DESCPB   
+DURAPB   
+EMPTYPB  
+FLDMASKP 
+
+
+git config --global core.autocrlf false
+git clone https://github.com/zopencommunity/protobuf.git
+7-zip  https://www.7-zip.org/
+
+
+We need to handle .pb.h and .pb.cc differently:
+
+File Type	Transfer Mode	Why
+.pb.cc	Binary	Contains binary descriptors
+.pb.h	Text	Pure C++ headers (safe in ASCII/UTF-8)
+.tar.gz	Binary	Best if you want to move the entire source tree
+
+
+
+Option A — Modify the macro in port_def.inc (Recommended)
+Edit the file where PROTOBUF_ATTRIBUTE_INIT_PRIORITY is defined (usually src/google/protobuf/port_def.inc):
+
+cpp
+Copy
+Edit
+#if defined(__MVS__) || defined(__ZOS__)
+#define PROTOBUF_ATTRIBUTE_INIT_PRIORITY
+#else
+#define PROTOBUF_ATTRIBUTE_INIT_PRIORITY __attribute__((init_priority(102)))
+#endif
+
+
+
+.\protoc -I="C:\Users\sandeep.garg\Desktop\protobuf\API-SV-Dev-master\API-SV-Dev-master\protobuf-main\dummy\protobuf\src" --cpp_out="C:\Users\sandeep.garg\Desktop\protobuf\API-SV-Dev-master\API-SV-Dev-master\protobuf-main\dummy\dummyout" "C:\Users\sandeep.garg\Desktop\protobuf\API-SV-Dev-master\API-SV-Dev-master\protobuf-main\dummy\protobuf\src\google\protobuf\wrappers.proto"
+
+
+
+xlC -qascii -q64 -c $(SRC_DIR)/google/protobuf/*.cc
+xlC -qascii -q64 -c $(SRC_DIR)/google/protobuf/compiler/*.cc
+ar -rv libprotobuf.a *.o
+ar -x libcurl.a
+
+printf("Descriptor size: %zu\n", sizeof(encoded_file_descriptor));
+
+descriptor_table_google_2fprotobuf_2fdescriptor_2eproto
+
+
+
+
+/usr/lpp/IBM/cnw/v2r1/openxl/bin/ibm-clang++ \
+    -finput-charset=UTF-8 \
+    -fexec-charset=UTF-8 \
+    -std=c++17 \
+    -O2 \
+    -c $(SRC_DIR)/google/protobuf/*.cc
+
+
+So, descriptor.pb.cc → AddDescriptorsRunner → AddDescriptors() → InternalAddGeneratedFile().
+
+1. Inside descriptor.pb.cc
+
+Look for something like:
+
+static ::google::protobuf::internal::AddDescriptorsRunner
+    static_descriptor_initializer_google_2fprotobuf_2fdescriptor_2eproto(
+        &descriptor_table_google_2fprotobuf_2fdescriptor_2eproto);
+
+
+This initializes a descriptor table for descriptor.proto.
+
+2. Inside the Descriptor Table
+
+That descriptor_table_google_2fprotobuf_2fdescriptor_2eproto contains:
+
+const ::google::protobuf::internal::DescriptorTable
+    descriptor_table_google_2fprotobuf_2fdescriptor_2eproto = {
+        "google/protobuf/descriptor.proto",
+        encoded_file_descriptor,
+        sizeof(encoded_file_descriptor),
+        ...
+    };
+
+3. Where InternalAddGeneratedFile() is Actually Called
+
+Inside AddDescriptors() (in descriptor_table.cc):
+
+void AddDescriptors(DescriptorTable* table) {
+    ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
+        table->descriptor,
+        table->size);
+}
+
+
+changes done 
+………………………………………
+
+port_def.inc
+#define PROTOBUF_THREAD_LOCAL
+#define PROTOBUF_ATTRIBUTE_INIT_PRIORITY
+
+What Is the zosbuild/Makefile?
+It’s a Makefile designed specifically for building Protobuf on z/OS, located in the zosbuild directory of the zopencommunity/protobuf repo. To execute it, you'll run make from within that directory — but there are some prerequisites:
+
+Pre-Requisites for Running It Successfully
+Git Clone the Repository
+On z/OS USS, ensure you have Git installed (via zOpen community or IBM OEF). Then:
+
+sh
+Copy
+Edit
+git clone https://github.com/zopencommunity/protobuf.git
+cd protobuf/zosbuild
+Set z/OS USS Environment for POSIX and Binary Safety
+Before running make, initialize your environment properly:
+
+sh
+Copy
+Edit
+export _BPXK_AUTOCVT=ON
+export _CEE_RUNOPTS="$_CEE_RUNOPTS POSIX(ON) FILETAG(AUTOCVT,AUTOTAG)"
+export _TAG_REDIR_ERR=txt
+export _TAG_REDIR_IN=txt
+export _TAG_REDIR_OUT=txt
+These settings ensure:
+
+Correct POSIX behavior
+
+No automatic ASCII↔EBCDIC conversion of binary data
+
+Proper file tagging for Protobuf descriptor data
+
+GitHub
+
+Ensure a Compatible make Utility Is Available
+You can use z/OS’s native make, or install GNU gmake from zOpen:
+
+sh
+Copy
+Edit
+zopen install gmake
+Install Required Tools
+Make sure protoc, clang, and other tools referenced in the Makefile are installed—either manually or via zopen tools.
+
+How to Run the Makefile
+Once in the zosbuild directory:
+
+sh
+Copy
+Edit
+gmake  # or just `make` if using the USS native version
+The Makefile should compile Protobuf's code using CNWCLANG or xlc, honoring the z/OS-specific build flags and linking steps defined within.
+
+Summary Table
+Step	Action
+1	Clone the repo and navigate to zosbuild
+2	Set environment: _BPXK_AUTOCVT, _CEE_RUNOPTS, _TAG_REDIR_*
+3	Ensure make and necessary tools are installed
+4	Run make to build
+
+Let me know if you'd like help reviewing or modifying the Makefile for your system or integrating it into a JCL build.
+
+
+line 306 -309
+$(SRC_LIBZ):                                
+ git clone https://github.com/madler/zlib   
+ -@echo "zlib cloned successfully"          
+                                            
+// Old:
+PROTOBUF_THREAD_LOCAL int my_var;
+
+// New:
+static pthread_key_t my_var_key;
+static pthread_once_t my_var_key_once = PTHREAD_ONCE_INIT;
+
+static void make_my_var_key() {
+    pthread_key_create(&my_var_key, NULL);
+}
+
+int& get_my_var() {
+    pthread_once(&my_var_key_once, make_my_var_key);
+    int* value = (int*)pthread_getspecific(my_var_key);
+    if (!value) {
+        value = new int();
+        pthread_setspecific(my_var_key, value);
+    }
+    return *value;
+}
+
+
+
+export PATH=/usr/lpp/cbclib/xlclang/bin:$PATH
+export CC=xlclang
+export CXX=xlclang++
+export CFLAGS="-O2 -qascii -qdebug=full -qfloat=ieee -D_ALL_SOURCE -D_UNIX03_THREADS -U_OPEN_THREADS"
+export CXXFLAGS="$CFLAGS"
+export LDFLAGS="-Wl,DLL -Wl,AMODE=31 -Wl,RENT"
+export LIBPATH=/usr/lpp/cbclib/lib:/usr/lib:/lib
+
+
+
+Earlier
+
+# $PATH                                                                         
+/apc/portedtools/git/bin:/usr/lpp/cbclib/xlclang/bin:/apc/portedtools/make/make-
+4.4.1/bin:/usr/lpp/cbclib/xlc/bin:/bin:/usr/lpp/IBM/cnw/v2r1/openxl/bin:/bin:/u/
+ritbld/colony/worker/ritvA120/Release/3rdPartyC/include/curl-7.83.1/bin/:/bin:/a
+pc/java11/usr/lpp/java/64bit/J11.0_64/bin:.: FSUM7351 not found                 
+
+
+
+Now
+….
+export PATH=/usr/lpp/cbclib/xlclang/bin:/bin:/usr/bin:/usr/lpp/bin
+ export LIBPATH=/usr/lpp/cbclib/lib:/lib:/usr/lib
+
+
+
+
+
+
+https://github.com/curl/curl/tree/curl-7_52_1/lib
+
+
+
+
+1) environment variables set
+
+export CONFIG_SITE=/usr/include1/curl-8.15.0/config.site
+export CC=cnwclang
+export CXX=cnwclang++
+export CFLAGS="-qascii -q64 -D_ALL_SOURCE -D_OPEN_SYS -D_XOPEN_SOURCE_EXTENDED=1 -D_POSIX_SOURCE"
+export CXXFLAGS="-qascii -q64 -D_ALL_SOURCE -D_OPEN_SYS -D_XOPEN_SOURCE_EXTENDED=1 -D_POSIX_SOURCE"
+
+./configure
+
+
+
+
+
+slist.c
+easy.c
+strdup.c
+version.c
+select.c   l
+hostip.c
+url.c
+multi.c   l
+sendf.c  l
+getinfo.c
+cookie.c
+transfer.c l
+timeval.c l
+memdebuf.c
+
+
+cp -r H_IBM-1047/. /usr/include1/curl-7.52.1/include/curl/
+/usr/lpp/IBM/cnw/v2r1/openxl/include/c++/v1
+
+
+        while (std::getline(sysinDD, crvtBuffer)) {     
+        // Convert EBCDIC ? ASCII                       
+           ebc2asc(crvtBuffer, token);                  
+           // Skip blank lines or DD terminator         
+           if (token.empty() || token == "/*")          
+             break;                                     
+         std::cout << crvtBuffer <<std::endl;           
+         // Tokenize using a new stringstream per line  
+            bufferStream << token + ' ';                
+           while (bufferStream >> token) {              
+              tokens.push(token);                       
+           }                                            
+           // Optional debug print                      
+        } */  
+
+NJMYCLDDW387701.NONPROD.HCLPNP.COM:7824
+
+
+#include <cstdint>   // for uintptr_t
+#include <cstring>   // for memcpy
+
+// Assume g_userparm and ECB pointers are defined
+int* ECBLIST[3];
+
+// Copy the addresses of the ECBs
+memcpy(&ECBLIST[0], &g_userparm->AMODECB, sizeof(int*));
+memcpy(&ECBLIST[1], &g_userparm->AIOERECB, sizeof(int*));
+memcpy(&ECBLIST[2], &g_userparm->ACANCECB, sizeof(int*));
+
+// Set the high bit on the last ECB to mark end of list safely
+ECBLIST[2] = reinterpret_cast<int*>(
+    0x80000000UL | reinterpret_cast<uintptr_t>(ECBLIST[2])
+);
+
+// Call the legacy 31-bit RITWAIT
+int rc = ritwait(reinterpret_cast<int*>(&ECBLIST));
+
+// Optional: debug print
+printf("ritwait returned: %d\n", rc);
+
+ #define INT_BeforeLink      4   
+ #define INT_AfterLink       8   
+ #define INT_OK              4   
+ #define INT_Bypass          8   
+                                 
+ #define RIT_SOCK_MAX        25  
+Transaction=*
+                                 
+Programs changed : 
+HRVCCICS
+HRVCAPLG
+HRVCCFPL
+HRVCCNDT   
+HRVCCOMM       
+HRVCCONF (No CHANGES)
+HRVCLGEV
+HRVCLGGR
+HRVCOBVR
+HRVCPRXY
+HRVCPRMS
+HRVCPROT
+HRVCRECD
+HRVCRGPL
+HRVCPROT
+HRVCSCTL
+
+'RITBLD.CICS.COMPILE.JCL1107.COPY
+RITZ.RIT.V1107.RELEAS.RITCPP.COPY
+RITZ.RIT.V1107.RELEAS.RITH.COPY
+HRVCCICS_CIC56M11_COPY        
+
+HRVCSCTL  done
+HRVCXFER  done
+HRVCRGPL done  
+HRVCRECD  done  
+HRVCSSVR  done         
+
+'RITADM.MISC.V1107.JCL' 
+
+$ git checkout master
+
+$ git pull
+
+$ git checkout v11.0.3
+
+$ git pull
+
+$ git checkout -b 'TP-94545-cherry-pick' ==>create new branch for cherry pick
+
+$ git cherry-pick c31b77b3ad1a9f24fdd10adb8900ee077e404903
+aaf216ad9a5f52baea7ba29451ea0bc158d24185
+
+git push
+$ git push
+
+$ git push --set-upstream origin TP-94545-cherry-pick
+ 
+
+https://github01.hclpnp.com/testingproducts/API-SV-Dev/blob/master/Green%20Hat/releng/ccb/cifs/tool-db2z.xml
+http://it-build1.nonprod.hclpnp.com/it-main/master/RIT/I/I20251205_0342/cic-metadata/plugins/com.greenhat.vie.comms_1.1108.0.v20251205_0342.jar
+
+Ravi kant 
+
+http://10.190.97.45:7819/RTCP/rest/proxy/register
+
+INFO: Communication with server on 'https://master-hcl.tp-k8s.nonprod.hclpnp.com/test/rest/spaces/Initial/virtualization/register' has resumed.
+
+Jan 14, 2026 3:34:57 AM com.greenhat.vie.comms.util.ObjectPoller$Poller run
+INFO: Communication with server on 'https://master-hcl.tp-k8s.nonprod.hclpnp.com/test/rest/spaces/Initial/virtualization/config/9beeb7b8-c9a3-4be6-aeb7-b8c9a30be692' has resumed.
+
+https://hcl-software.okta.com/app/UserHome?session_hint=AUTHENTICATED
+RITADM.CERETI.TXT
+RACDCERT ID(RITADM) DELRING(RTCPRING1)                 
+RACDCERT ID(RITADM) DELRING(THRING)                    
+RACDCERT ID(RITADM) REMOVE(LABEL('THCA') RING(THRING)) 
+RACDCERT CHECKCERT('RITADM.CERETICB.TXT')
+RACDCERT ID(RITADM) REMOVE(LABEL('TBCA') RING(CBRING)) 
+
+/u/ritbld/colony/worker/ritvA120/Release/3rdPartyC/include/curl/lib/libcurl.a
+/usr/lpp/gskssl/include/
+-D_OPEN_SYS_SOCK_EXT
+RACDCERT ID(RITADM) REMOVE(CERTAUTH LABEL('THCA') RING(CBRING))
+RACDCERT ID(ring-owner) CONNECT(CERTAUTH LABEL('THCA') RING(CBRING) DEFAULT)
+
+RACDCERT ID(RITADM) REMOVE(ID(RITADM) LABEL('TBCA') RING(CBRING))
+RACDCERT ID(RITADM) CONNECT(ID(RITADM) LABEL('TBCA') RING(CBRING) DEFAULT)
+
+https://master-hcl.tp-k8s.nonprod.hclpnp.com/test/rest/spaces/Initial/virtualization/register
+
+<dth_base_url>/rest/spaces/<space_id>/virtualization/register
+<dth_base_url>/rest/spaces/<space_id>/virtualization/config
+<dth_base_url>/rest/spaces/<space_id>/virtualization/observation
+<dth_base_url>/rest/spaces/<space_id>/virtualization/container/log
+
+# curl --tlsv1.2 --ssl-no-revoke --cacert /u/ritadm/certificate            https
+://master-hcl.tp-k8s.nonprod.hclpnp.com        
+
+//STEP1 EXEC PGM=DFHSIP,PARM='SIT=XX,MAXTLSLEVEL=TLS13,MINTLSLEVEL=TLS13'      
+
+Important Compatibility Notes
+CICS Version: Your JCL uses CICSTS56 (CICS TS 5.6) [User JCL]. CICS TS 5.6 does not support TLS 1.3; it only supports up to TLS 1.2. You must upgrade to CICS TS 6.1 or later to use this protocol.
+Cipher Suites: TLS 1.3 requires 4-digit XML-based cipher suites. You must update your TCPIPSERVICE and IPCONN definitions to point to a TLS cipher suite specification file in USS instead of using standard 2-digit numeric codes. 
+Planet Mainframe
+Planet Mainframe
+ +2             
+/u/ramyal/include1/curl-8.15.0/buildcurl.sh  
+SYS2.TCPIP.PARMLIB.SYSPLEXM(PROFILM3)
+SYS1.PROCLIB.TVM3.USER
+TcpImage TCPIP /etc/pagent/pagent_TTLS.conf FLUSH NOPURGE 2000000000   
+
+# This is the specific service for TLS 1.3 Key Exchange (Diffie-Hellman)
+PERMIT CSF1DVK CLASS(CSFSERV) ID(RITADM) ACCESS(READ)
+
+# These are for generating and using the keys
+PERMIT CSF1GKP CLASS(CSFSERV) ID(RITADM) ACCESS(READ)
+PERMIT CSF1PKS CLASS(CSFSERV) ID(RITADM) ACCESS(READ)
+
+SETROPTS RACLIST(CSFSERV) REFRESH
+
+RACDCERT ID(RITADM) ADD('RITADM.CERETIA.TXT') +
+     WITHLABEL('CICS_AGENT_CERT') TRUST        
+
+RACDCERT ID(RITADM) CONNECT(LABEL('CICS_AGENT_CERT') RING(CPRING)
+USAGE(PERSONAL) DEFAULT)         
+
+NETSTAT ALLCONN (PORT 5443
+NETSTAT TTLS CONN 00004241 DETAIL
+
+MVS TCP/IP NETSTAT CS 3.1       TCPIP Name: TCPIP           09:32:48    
+ConnID: 00004241                                                        
+  JobName:      CIC56AGT                                                
+  LocalSocket:  10.134.71.136..10050                                    
+  RemoteSocket: 10.190.97.45..5443                                      
+  SecLevel:     TLS Version 1.2                                         
+  Cipher:       C030 TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384              
+  KeyShare:     N/A                                                     
+  CertUserID:   N/A                                                     
+  MapType:      Primary                                                 
+  FIPS140:      Off                                                     
+  SessionID:    4E65F92F FB8E95DA 15DC35CF 6068F95A                     
+                993B87ED 5212E168 1EC6363F 2F7014CF                     
+  SIDReuseReq:  Off                                                     
+TTLSRule: Outbound_RTCP_Rule                                            
+  Priority:       1                                                     
+  LocalAddr:      All                                                   
+  LocalPort:      All                                                   
+  RemoteAddr:     10.190.97.45                                          
+  RemotePort:     5443                                                  
+  Direction:      Outbound                                              
+  TTLSGrpAction:  Group_Action_All                                      
+    GroupID:                    00000011  
+  TTLSEnabled:                On                                   
+  CtraceClearText:            Off                                  
+  Trace:                      2                                    
+  SyslogFacility:             Daemon                               
+  SecondaryMap:               Off                                  
+  FIPS140:                    Off                                  
+TTLSEnvAction:  Outbound_Env_Action                                
+  HandshakeRole:              Client                               
+  SuiteBProfile:              Off                                  
+  MiddleBoxCompatMode:        Off                                  
+  Keyring:                    RITADM/CPRING                        
+  V3CipherSuites:             1302 TLS_AES_256_GCM_SHA384          
+                              1301 TLS_AES_128_GCM_SHA256          
+                              1303 TLS_CHACHA20_POLY1305_SHA256    
+                              C030 TLS_ECDHE_RSA_WITH_AES_256_GC   
+                                   M_SHA384                        
+                              C02F TLS_ECDHE_RSA_WITH_AES_128_GC   
+                                   M_SHA256                        
+  SSLV2:                      Off                                  
+  SSLV3:                      Off                                  
+  TLSV1:                      On                                   
+  TLSV1.1:                    On                                   
+  TLSV1.2:                    On          
+
+
+
+Server certificate for THRING
+
+RACDCERT ID(RITADM) CONNECT(ID(RITADM) LABEL('TBCA') +
+  RING(RTCPRING) USAGE(CERTAUTH) DEFAULT)
+Use code with caution.
+
+2. Refresh RACF
+You must refresh the DIGTRING class for the "Default" status to take effect in the system's memory:
+tsocmd
+SETROPTS RACLIST(DIGTRING) REFRESH
+Use code with caution.
+
+3. Verify the Status
+Run the list command to confirm that DEFAULT now shows YES:
+tsocmd
+RACDCERT ID(RITADM) LISTRING(RTCPRING)
+Use code with caution.
+
+
+
+  >OU=tp-k8s.nonprod.hclpnp.com CA.O=tp-k8s.nonprod.hclpnp.com<
+ >OU=tp-k8s.nonprod.hclpnp.com CA.O=tp-k8s.nonprod.hclpnp.com<
+
+
+
+
+// Example usage
+int main() {
+    // Set access token
+    TokenHandler::setAccessToken("eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVC...");
+
+    // Set bearer token
+    TokenHandler::setBearerToken("Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVC...");
+
+    std::cout << "Access Token: " << TokenHandler::accessToken << std::endl;
+    std::cout << "Bearer Token: " << TokenHandler::bearerToken << std::endl;
+
+    // Clear access token
+    TokenHandler::clearAccessToken();
+    std::cout << "After clearing, Access Token: " << TokenHandler::accessToken << std::endl;
+    std::cout << "After clearing, Bearer Token: " << TokenHandler::bearerToken << std::endl;
+
+    return 0;
+}
+✅ Features
+
+
+
+
+
+
+Configuration:
+………………………………………
+
+std::string url = std::string(asciiUrl) + uuid;
+
+// Example: GET current configuration
+Configuration* pCfg = (Configuration*) pXfer.getObj(url, log);
+
+if (pCfg != NULL) {
+    // Optionally modify configuration
+    pCfg->set_loglevel(5);  // Example change
+    pPoller->setConfig(pCfg);
+
+    // Push the updated configuration to the server
+    Configuration* respCfg = pXfer.postConfiguration(url, pCfg, log);
+
+    if (respCfg != NULL) {
+        log->info("Configuration successfully posted to server");
+        delete respCfg;  // Free memory if not stored
+    } else {
+        log->error("Failed to POST configuration to server");
+    }
+
+    pPoller->onReceived();  // Apply configuration locally
+}
+
+
+Configuration* ObjXfer::postConfiguration(const string &url, Configuration* cfg, Logger* log);
+
+
+function:
+…………………………
+
+
+Configuration* ObjXfer::postConfiguration(const string &url, Configuration* cfg, Logger* log)
+{
+    struct ObjectReceived objRecv;
+    std::string serializedConfig;
+    if(!cfg->SerializeToString(&serializedConfig)) {
+        if(log) log->error("Failed to serialize Configuration protobuf");
+        return nullptr;
+    }
+
+    curl_easy_setopt(pcurl_, CURLOPT_URL, url.c_str());
+    curl_easy_setopt(pcurl_, CURLOPT_VERBOSE, 0);
+    curl_easy_setopt(pcurl_, CURLOPT_WRITEFUNCTION, record_write);
+    curl_easy_setopt(pcurl_, CURLOPT_WRITEDATA, &objRecv);
+    curl_easy_setopt(pcurl_, CURLOPT_NOSIGNAL, 1L);
+    curl_easy_setopt(pcurl_, CURLOPT_CONNECTTIMEOUT, getConnTimeout());
+
+    curl_easy_setopt(pcurl_, CURLOPT_POST, 1L);
+    curl_easy_setopt(pcurl_, CURLOPT_POSTFIELDS, serializedConfig.c_str());
+    curl_easy_setopt(pcurl_, CURLOPT_POSTFIELDSIZE, serializedConfig.size());
+
+    struct curl_slist* http_headers = nullptr;
+    http_headers = curl_slist_append(http_headers, "Content-Type: application/x-protobuf");
+    std::string authHeader = "Authorization: Bearer " + accessToken; // use your static token
+    http_headers = curl_slist_append(http_headers, authHeader.c_str());
+    curl_easy_setopt(pcurl_, CURLOPT_HTTPHEADER, http_headers);
+
+    CURLcode res = curl_easy_perform(pcurl_);
+    curl_slist_free_all(http_headers);
+
+    if(res != CURLE_OK) {
+        if(log) log->error("Failed POST: %s", curl_easy_strerror(res));
+        return nullptr;
+    }
+
+    Configuration* respCfg = new Configuration();
+    if(!respCfg->ParseFromString(objRecv.response)) {
+        if(log) log->error("Failed to parse POST response");
+        DELETE(respCfg);
+        return nullptr;
+    }
+
+    return respCfg;
+}
+
+
+
+https://master-hcl.tp-k8s.nonprod.hclpnp.com/test/rest/spaces/Initial/virtualization/register
+
+
+C:\ProgramData\Microsoft\Windows\Hyper-V\
+
+
+
+RITADM.RIT.CICS.LOAD   
+RITADM.RIT.CICS.LOADLIB
+                                                                                               
