@@ -1,0 +1,28 @@
+Here are my notes from when I was setting up TVM3. Maybe this will help a little. Maybe you can ask Nikhil's team to do the step of verifying that the sample data bases have been created, and then see if you can compile and run job CUR005. 
+
+ 
+
+Test Db2
+Create Db2 subsystem - done
+Ensure sample databases have been created 🡨 Do this next, then continue updating compile JCL and test CUR005.
+Copy over DB2TST datasets from 3I – DB2TST.** - done, but need to perform the following before running each program:
+Compile
+Update run JCL:
+Change Db2 subsystem to DCM3
+Add Db2Prefix1 symbol
+Copy over debugger from 3I - MSTUCK.DEBUG.V15.APR2221.SEQAMOD - done
+Copy over profile service from 3I
+OMVS.MV3I.ZDEBUG.MAR2420    /zdebugger
+OMVS.MV3I.ZDEBUG.OPENBETA   /zdebuggerOpenBeta
+OMVS.MV3I.ZDEBUG.V150908    /zdebugger_V15_09082020 - done
+/etc/debug/eqaprof.env – need to update java_dir
+/var/debug - done
+EQAPROF proc – done
+Do I need to do anything with /etc/debug/keystore?
+Enable security in CICS? MSTUCK.DEBUG.V15.APR1921.SEQASAMP(EQACCSD) - done
+SEC=YES in SYSIN
+New profile TCICSTRN * with UACC read
+READ access to GCICSTRN CAT1 for CICS56
+New profile GCICSTRN * with UACC update
+Add Debug dataset to CICS proc - done
+Run EQAWISVC – done, but needs to be documented that this has to be done after each IPL
