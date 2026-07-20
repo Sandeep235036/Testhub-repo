@@ -1,0 +1,2 @@
+*.exe filter=lfs diff=lfs merge=lfs -text
+IBM_CDWebServices_V_6.4.0.5_Window_x64/MFTWebServices.exe filter=lfs diff=lfs merge=lfs -text
